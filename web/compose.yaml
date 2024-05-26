@@ -1,0 +1,37 @@
+networks:
+  network1:
+    name: network1
+
+services:
+  nodejs:
+    container_name: nodejs
+    build: .
+    ports:
+      - "3000:3000"
+    depends_on:
+      - mysql1
+
+  mysql1:
+    container_name: mysql1
+    image: mysql
+    volumes:
+      - ./web/mysql-data:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+    networks:
+      - network1
+
+  phpmyadmin1:
+    container_name: phpmyadmin1
+    image: phpmyadmin
+    ports:
+      - 1500:80
+    environment:
+      - PMA_HOST=mysql1
+    networks:
+      - network1
+    depends_on:
+      - mysql1
+
+
+
