@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>Отчет</title>
+  <style type="text/css">
+/* Для формата А4*/
+div {
+width: 21cm; /* ширина */
+height: 29.7cm; /* высота */
+padding: 60px 60px 60px 60px; /* внутренние отступы - верх, право, низ, лево */
+margin: 50px auto; /* выравнивание по центру */
+box-shadow: 10px 10px 20px black; /* небольшая тень для объемности */
+background-color: white; /* цвет фона в блоке */
+font-family: "Times New Roman";
+font-size:20px; /* размер шрифта */
+line-height:30px; /* высота строки 20*1.5 */
+
+}
+
+ .pic {
+    text-align: center; /* Выравнивания картинки по центру в html */ 
+   }
+
+.footer {
+position: fixed;
+bottom: 0;
+width: 100%;
+background-color: #f9f9f9;
+padding: 10px;
+}
+.text {
+text-align: center;
+}
+
+
+</style>
+ </head>
+ <body bgcolor="#000" background="images/black.jpg">
+  <div>
+<center>Министерство образования и науки Российской Федерации </center>
+<center>Новосибирский государственный технический университет </center>
+<br>
+<br>
+<center>Кафедра теоретической и прикладной информатики</center>
+<script>
+for(var i=0;i<=8;i++)
+{
+document.write("<br>");
+}
+</script>
+<center>Лабораторная работа №3</center>
+<br>
+<center>По дисциплине “Основы web-программирования”</center>
+<center>“Программа”</center>
+<script>
+for(var i=0;i<=6;i++)
+{
+document.write("<br>");
+}
+</script>
+
+
+Факультет:		 ФПМИ
+<br>
+Группа:		 ПМИ-11
+<br>
+Студенты: Ковалевский Д.Е.
+<br>
+Преподаватель:	Цыгулин А.А.
+<script>
+for(var i=0;i<=6;i++)
+{
+document.write("<br>");
+}
+</script>
+<p class="text">Новосибирск 2023</p>
+</div>
+
+<div>
+<h5>Задание №1</h5>
+ добавить возможность добавлять комментарии на страницу:
+<p class="pic"><img src="images/report2.jpg" alt="pic"></p>
+<h5>Задание №2</h5>
+добавить возможность по управлению этими комментариями для автора:<br>
+ <p class="pic"><img src="images/report3.jpg" alt="pic"></p>
+</div>
+  <div>
+ <h5>Задание №3</h5>
+добавить сохранение комментариев в файле(а) или простой базе данных (б):
+   <p class="pic"><img src="images/report4.jpg" alt="pic"></p>
+<h5>Вывод:</h5>
+В ходе работы была добавлена система комментирования на сайт и возможность управления комментариями. Все данные хранятся в бд phpmyadmin на localhost.
+
+</div>
+ </body>
+</html>

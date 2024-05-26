@@ -1,0 +1,47 @@
+hr {
+  margin: 10px auto;
+  width: 90%;
+  height: 2px;
+  text-align: center;
+  border: 0;
+  background: -webkit-linear-gradient(left, rgba(173, 12, 14, 0.16) 0%,rgba(101, 95, 95, 0.59) 50%,rgba(189, 15, 18, 0.04) 100%);
+  background: linear-gradient(to right, rgba(156, 149, 149, 0.08) 0%,rgba(49, 48, 48, 0.6) 50%,rgba(158, 153, 153, 0.07) 100%);
+}
+
+  .container {
+  position: relative;
+  display: block;
+  margin: 30px auto;
+  width: 70%;
+  max-width: 980px;
+  }
+  .container ul li {
+  margin: 10px auto;
+  }
+   
+.naloncustomev {
+  display: block;
+  width: 350px;
+  height: 215px;
+
+  font-size: 14px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+   
+.naloncustomev h2 {
+  padding: 0;
+  text-align: center;
+  text-shadow: 1px 1px #e6e4e4;
+  font-weight: 400;
+  font-size: 1.4em;
+  line-height: 2;
+  font-family: 'Open Sans', Calibri, Arial, sans-serif;
+  color: #444242;
+}
+
+  .naloncustomev P {
+  width:310px;
+  margin:0 auto;
+  }
